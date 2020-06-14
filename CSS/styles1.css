@@ -7,36 +7,45 @@
   background-image: linear-gradient(45deg, #50a0bf 0%, #e4efe9 100%);  
   grid-template-rows: 1fr 1fr;
 }
+.common {
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.gridCommon {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.textSize {
+  font-size: 16px;
+}
+
+.hr {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(102, 196, 217, 0), rgba(80, 160, 191, 0.75), rgba(102, 196, 217, 0));
+}
 
 .header {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  text-align: center;
   height: 3rem;
-  /* background-color: #D0E9F2; */
-  font-size: 15px;
-  font-weight: 600;
   color: #151926;
 }
 
 .cover {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
   height: 15rem;
-  /* background-image: linear-gradient(45deg, #50a0bf 0%, #e4efe9 100%);   */
-  text-align: center;
-  align-items: center;
   font-size: 30px;
   font-weight: 700;
-  line-height: 4rem;
-
-  /* background-color: #50A0BF;
-  background: rgb(80,160,191); */
-  /* background: linear-gradient(315deg, rgba(80,160,191,.7) 29%, rgba(210,176,103,0.8) 78%); */
-}
+  line-height: 4rem;}
 
 .about-me-info {
   display: grid;
@@ -48,122 +57,89 @@
   display: grid;
   grid-row: 1/2;
   align-items: center;
-  justify-content: center;
   height: 5rem;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 #hr1 {
   display: grid;
   grid-row: 2/3;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(102, 196, 217, 0), rgba(80, 160, 191, 0.75), rgba(102, 196, 217, 0));
 }
 
-.who-i-am {
-  display: grid;
+.sect1 {
   grid-row: 3/4;
-  height: 15rem;
-  align-items: center;
-  text-align: center;
-  margin: auto 10%;
 }
 
 .what-i-do {
   display: grid;
   grid-row: 4/5;
   height: 5rem;
-  align-items: center;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 #hr2 {
   display: grid;
   grid-row: 5/6;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(102, 196, 217, 0), rgba(80, 160, 191, 0.75), rgba(102, 196, 217, 0));
+}
+
+.sect2 {
+  grid-row: 6/7;
 }
 
 .skills {
   display: grid;
-  grid-row: 6/7;
   height: 9rem;
   margin: 10% 40%;
-  list-style: none;
+  font-weight: 500;
 }
 
 li {
   margin: 0 0 7px 0;
+  list-style-type: none;
+
 }
 
 .contact2 {
   display: grid;
-  grid-row: 7/8;
+  grid-row: 10/11;
   height: 5rem;
-  align-items: center;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  /* border: 1px solid black; */
 }
 
 #hr3 {
   display: grid;
   grid-row: 8/9;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(102, 196, 217, 0), rgba(80, 160, 191, 0.75), rgba(102, 196, 217, 0));
+}
+
+#sect3 {
+  display: grid;
+  grid-row:9/10
 }
 
 .connect {
   display: grid;
-  grid-row: 9/10;
+  grid-row: 11/12;
   height: 7rem;
-  align-items: center;
-  text-align: center;
   margin: auto 10%;
+  font-weight: 500;
 }
 
 .footer {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
   background-color: #50a0bf;
   font-size: 12px;
   text-align: right;
+  margin-top: 30px;
 }
 
 #contact-statment {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  font-size: 20px;
   font-weight: 500;
-  text-align: center;
-  align-items: center;
   height: 6rem;
   margin: 10% 10% 5% 10%;
 }
 
 .email {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
   height: 4rem;
-  text-align: center;
-  align-items: center;
-  font-size: 16px;
+  font-weight: 500;
 }
 
 #send-mail {
@@ -190,6 +166,49 @@ li {
   align-items: center;
 }
 
-#social-link-ul {
-  list-style-type: none;
+.linkSpace {
+  margin: 20px;
+}
+
+.workExample {
+  display: grid;
+  height: 15rem;
+  margin: auto 10%;
+  font-weight: 500;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .common {
+    font-size: 24px;
+  }
+
+  .textSize {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .cover {
+    font-size: 36px;
+    height: 26rem;
+  }
+
+  .footer {
+    margin-top: 70px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .header {
+    height: 4rem;
+  }
+
+  .social-links {
+    font-size: 20px;
+  }
+  
+  .contactDesktop {
+    height: 4rem;
+  }
 }
