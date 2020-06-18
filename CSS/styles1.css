@@ -23,6 +23,13 @@
   font-size: 16px;
 }
 
+img {
+  height: 60px;
+  width: 60px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
 .hr {
   display: grid;
   grid-template-columns: 1fr;
@@ -97,15 +104,16 @@ li {
 
 }
 
-.contact2 {
-  display: grid;
-  grid-row: 10/11;
-  height: 5rem;
+.UI-project {
+  grid-row: 7/8;
+  height: 2rem;
+  margin-top: 30px;
 }
 
 #hr3 {
   display: grid;
   grid-row: 8/9;
+  margin-top: 20px;
 }
 
 #sect3 {
@@ -113,12 +121,28 @@ li {
   grid-row:9/10
 }
 
+#hr4 {
+  display: grid;
+  grid-row: 10/11;
+  margin-bottom: 20px;
+}
+
+.contact2 {
+  display: grid;
+  grid-row:11/12;
+  height: 4rem;
+}
+
 .connect {
   display: grid;
-  grid-row: 11/12;
+  grid-row: 12/13;
   height: 7rem;
-  margin: auto 10%;
+  margin: 3% 10%;
   font-weight: 500;
+}
+
+.contactLink {
+  font-size: 24px;
 }
 
 .footer {
@@ -126,7 +150,7 @@ li {
   background-color: #50a0bf;
   font-size: 12px;
   text-align: right;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 #contact-statment {
@@ -149,7 +173,8 @@ li {
   border-color: rgba(21, 25, 38, .25);
   padding: 1rem 2.5rem;
   font-weight: 600;
- 
+  background-color: rgba(80, 160, 191, .25);
+  font-size: 22px;
 }
 
 .button {
@@ -168,6 +193,7 @@ li {
 
 .linkSpace {
   margin: 20px;
+  font-size: 22px;
 }
 
 .workExample {
@@ -175,7 +201,6 @@ li {
   height: 15rem;
   margin: auto 10%;
   font-weight: 500;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -195,7 +220,7 @@ li {
   }
 
   .footer {
-    margin-top: 70px;
+    margin-top: 100px;
     height: 25px;
     font-size: 16px;
   }
